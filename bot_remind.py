@@ -15,8 +15,8 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=["start"])
 async def start(message: types.Message):
     await message.reply("Привет👋 \n"
-                        "Создавайте напоминания на сегодня 📝, "
-                        "планируйте дела 📅 и получайте уведомления прямо в Telegram 🔔 .\n"
+                        "Создавайте напоминания на сегодня 📅 , "
+                        "планируйте дела 📝 и получайте уведомление 🔔 прямо в Telegram  .\n"
                         "Отправьте текстовое сообщение с указанием текста 🧾 и времени ⏰ напоминания!")
 
     user_id = message.from_user.id
