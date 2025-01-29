@@ -1,5 +1,7 @@
 import sqlite3
 import datetime
+
+
 def create_table():
     """Функция создает базу данных bot.db и таблицы User и Remind"""
     connection = sqlite3.connect("bot_remind.db")
@@ -34,6 +36,7 @@ def create_table():
 
 # create_table()
 
+
 def insert_into_table_user(user_id: int, user_name: str, user_surname: str, username: str, date_time: datetime):
     """Функция добавляет значения в таблицу User базы данных bot.db"""
     connection = sqlite3.connect("bot_remind.db")
@@ -51,6 +54,7 @@ def insert_into_table_user(user_id: int, user_name: str, user_surname: str, user
         connection.commit()
         cursor.close()
         connection.close()
+
 
 def insert_into_table_remind(user_id: int, text_remind: str, date_time: datetime):
     """Функция добавляет значения в таблицу Remind базы данных bot.db"""
