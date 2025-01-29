@@ -1,3 +1,0 @@
-
-"""example_bot"""
-API_TOKEN = "7286581991:AAFGS0iOufIK4-NSQs2HXIgRV8r2hiyRzTY"
